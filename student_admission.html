@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Students Admission</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+   <!-- //offline style sheet -->
+  <link rel="stylesheet" type="text/css" 
+        href="styles/school_admission.css">
+  <script type="text/javascript" src="js/school_admission.js"></script>
+
+  <!--Bootstrap-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+</head>
+
+<body>
+
+  <br><br>
+<div class="container form_container" id="form_container" style="max-width: 720px;"> 
+  <div class="container heading" style=""><b>School Admission Form</b></div>
+  <br>
+<form class="needs-validation" novalidate>
+  
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="fname_validation"><b>First name</b></label>
+      <input type="text" class="form-control" id="fname_validation" placeholder="First name" pattern="[A-Za-z]+" maxlength="20" value=""
+        required>
+      <div class="invalid-feedback">
+        Only alphabet are allowed.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="lname_validation"><b>Last name</b></label>
+      <input type="text" class="form-control" id="lname_validation" placeholder="Last name" pattern="[A-Za-z]+" maxlength="20" value="" required>
+      <div class="invalid-feedback">
+        Only alphabet are allowed.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+
+    </div>
+    
+  </div>
+  <div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for=""><b>Class</b></label>
+      <input type="text" class="form-control" id="" placeholder="Ex: 5A" pattern="[A-Za-z0-9]+" maxlength="3" required>
+      <div class="invalid-feedback">
+        Please provide a valid class name.
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+      <label for=""><b>Year of passing</b></label>
+      <input  type="number"  class="form-control" id="" placeholder="Ex: 2017" max="2017" min="1900"  required>
+      <div class="invalid-feedback">
+        Please provide a year valid.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for=""><b>Percentage</b></label>
+      <div class="input-group">
+        
+        <input type="number" class="form-control" max="100" min="0" id="" placeholder="Percentage"
+          aria-describedby="inputGroupPrepend" required>
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">%</span>
+        </div>
+        <div class="invalid-feedback">
+          Please enter pecentage of marks.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        I agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary btn-sm" id="submit_button" type="submit">Submit form</button>
+</form>
+</div>  
+
+<br><br>
+<div class="container" style="font-size: 20px;">
+  <p>Go to : 
+    <u>
+      <a style="color: blue;" href="index.html">Student Result</a>
+  </u>
+  </p>
+</div>
+
+</body>

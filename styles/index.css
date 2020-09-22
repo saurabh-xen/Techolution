@@ -1,0 +1,40 @@
+  
+/* we are taking two breaking point 320 and 768*/ 
+html { 
+      font-size: calc(.9em + 0.4vw) 
+      
+      }
+html a 
+  { 
+    color: black;
+
+  }
+  html a:hover 
+  { 
+    color: darkgreen;
+    
+  }
+body
+{
+  
+}
+
+  /*table*/
+.head_row th
+{
+  background-color: #999999;
+  font-size: inherit;
+  padding: 11px 0px 11px 0px;
+  text-align: center;
+}
+.table_row td
+{
+  background-color: #999999;
+  font-size: inherit;
+  padding: 11px 0px 11px 0px;
+  text-align: center;
+}
+.table_row a
+{
+  
+}
